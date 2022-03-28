@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app.css" />
+    <title>Yosemite Tour</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title">Yosemite Tour</h1>
+        <p id="description">
+          We take you to the home of natural wonders like Half Dome and the
+          giant sequoias.
+        </p>
+      </header>
+      <main id="main">
+        <section id="expectations">
+          <h2>What to Expect from Yosemite Tour</h2>
+          <article id="schedule">
+            <h3>Explore the popular Yosemite National Park</h3>
+            <p>
+              One of the main attractions of the Yosemite park tour from San
+              Francisco is the Yosemite National Park. This park is renowned for
+              its magnificent waterfalls, ancient sequoia trees, the granite
+              cliffs of El Capitan and Half Dome and much more.
+            </p>
+            <h3>Sight the stunning views of Yosemite waterfall</h3>
+            <p>
+              Being abode to an array of waterfalls, Yosemite waterfall,
+              towering Bridalveil Fall and whose paranoiac views will leave you
+              awestruck. With the day tour from San Francisco to Yosemite
+              National Park, you can get a chance to visit these great natural
+              wonders.
+            </p>
+            <h3>Choose to relax at the fall or cover hiking trails</h3>
+            <p>
+              After spending some time relishing the beauty of the Yosemite
+              waterfall, choose to relax and unwind near the waterfall or head
+              on to taste some adventure on Yosemite tours from San Francisco 1
+              day. Visit the Merced River known for hiking trails, swimming or
+              treat your eyes with the views of Sierra Nevada Mountain range,
+              Sierra Foothills and others.
+            </p>
+            <h3>Comfortable round trip transfers on tour</h3>
+            <p>
+              The transportation facility will be provided to the travellers on
+              the Yosemite tour package from San Francisco with pickup and drop
+              off to their hotel.
+            </p>
+          </article>
+        </section>
+        <form id="survey-form">
+          <h2 id="survey-title">Get in touch with our Travel Expert</h2>
+          <article id="survey">
+            <div class="form-group name">
+              <label for="name" id="name-label">Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="form-control"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+            <div class="form-group email">
+              <label id="email-label" for="email">Email</label>
+              <input
+                type="email"
+                placeholder="Enter your email"
+                id="email"
+                name="email"
+                class="form-control"
+                required
+              />
+            </div>
+            <div class="form-group number">
+              <label id="number-label" for="number">Number of Passengers</label>
+              <input
+                type="number"
+                placeholder="Enter the number of passengers"
+                class="form-control"
+                id="number"
+                min="1"
+                max="10"
+                name="passengers"
+                required
+              />
+            </div>
+            <div class="form-group plan">
+              <label for="dropdown">Type of Plan</label>
+              <select name="plan" id="dropdown" class="form-control" required>
+                <option disabled selected value="">Select your plan</option>
+                <option value="Regular">Regular (3 days and 2 nights)</option>
+                <option value="Medium">Medium (5 days and 4 nights)</option>
+                <option value="Full">Full (7 days and 6 nights)</option>
+              </select>
+            </div>
+            <div class="form-group accommodation">
+              <p>Type of Accommodation</p>
+              <label for="camping"
+                ><input
+                  type="radio"
+                  value="camping"
+                  name="accommodation"
+                  class="input-radio"
+                  id="camping"
+                  checked
+                />Camping</label
+              >
+              <label for="cabin"
+                ><input
+                  type="radio"
+                  value="cabin"
+                  name="accommodation"
+                  class="input-radio"
+                  id="cabin"
+                />Cabin</label
+              >
+              <label for="suite"
+                ><input
+                  type="radio"
+                  value="suite"
+                  name="accommodation"
+                  class="input-radio"
+                  id="suite"
+                />Suite</label
+              >
+            </div>
+            <div class="form-group activities">
+              <p>Extra Activities</p>
+              <label for="climbing">
+                <input
+                  type="checkbox"
+                  name="activities"
+                  value="climbing"
+                  class="input-checkbox"
+                  id="climbing"
+                />
+                Climbing
+              </label>
+              <label for="fishing">
+                <input
+                  type="checkbox"
+                  name="activities"
+                  value="fishing"
+                  class="input-checkbox"
+                  id="fishing"
+                />
+                Fishing
+              </label>
+              <label for="bird">
+                <input
+                  type="checkbox"
+                  name="activities"
+                  value="bird"
+                  class="input-checkbox"
+                  id="bird"
+                />
+                Birdwatching
+              </label>
+              <label for="photo">
+                <input
+                  type="checkbox"
+                  name="activities"
+                  value="photo"
+                  class="input-checkbox"
+                  id="photo"
+                />
+                Photography Spots Tour
+              </label>
+              <label for="biking">
+                <input
+                  type="checkbox"
+                  name="activities"
+                  value="biking"
+                  class="input-checkbox"
+                  id="biking"
+                />
+                Biking
+              </label>
+            </div>
+            <div class="form-group text">
+              <p>Tell us a little more to hear from the destination expert</p>
+              <textarea
+                name="question"
+                id="question"
+                placeholder="Enter your questions here..."
+              ></textarea>
+            </div>
+            <div class="form-group submit">
+              <button type="submit" id="submit" class="submit-button">
+                Submit
+              </button>
+            </div>
+          </article>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>

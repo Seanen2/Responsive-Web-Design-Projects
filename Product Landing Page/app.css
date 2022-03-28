@@ -1,0 +1,643 @@
+@import url("http://fonts.cdnfonts.com/css/gotham");
+
+:root {
+  --white: rgb(255, 255, 255);
+  --red: rgba(242, 10, 10, 1);
+  --gray: rgb(210, 210, 210);
+}
+
+body {
+  font-family: "Gotham", "Bebas Neue", sans-serif;
+  font-size: 10px;
+  margin: 0;
+  background-color: var(--white);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#header {
+  background: var(--red);
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  padding-bottom: 20px;
+  min-height: 120px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+#logo {
+  width: 50vw;
+}
+
+#logo > img {
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  padding-bottom: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 5rem;
+}
+
+nav > ul {
+  list-style: none;
+  font-family: "Bebas Neue";
+  font-size: 1.6rem;
+  width: 50vw;
+  padding-right: 5rem;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+main {
+  margin: 0;
+  width: 100%;
+}
+
+#video {
+  position: relative;
+  z-index: -1;
+  margin-top: 80px;
+  width: 100%;
+  transform: scaleX(-1);
+}
+
+#reseña {
+  width: 40%;
+  color: var(--white);
+  position: absolute;
+  padding: 20% 0 0 5%;
+  text-align: left;
+  background: radial-gradient(
+    closest-side,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+h1 {
+  font-size: 5rem;
+  margin-bottom: 1.5rem;
+}
+
+#reseña p {
+  line-height: 2.5rem;
+  font-size: 1.8rem;
+  font-weight: lighter;
+}
+
+#sport,
+#tactical,
+#daily,
+#instrument,
+#form {
+  margin-top: 3rem;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 20% auto;
+  align-items: center;
+  justify-items: center;
+  grid-gap: 1rem;
+}
+
+#form {
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(3, 1fr);
+  margin-top: 6rem;
+  padding: 0 10% 0;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 4rem;
+  grid-area: 1/1/2/3;
+  padding: 0 1.5rem 0;
+  position: relative;
+  background: var(--white);
+}
+
+#form h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+#raya1 {
+  display: grid;
+  width: 100%;
+  grid-area: 1/1/2/3;
+  align-items: center;
+  justify-items: center;
+}
+
+#raya {
+  position: absolute;
+  width: 85%;
+  height: 0.05rem;
+  background: var(--gray);
+  border: none;
+}
+
+#content {
+  grid-area: 2/1/3/3;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+  padding: 0 5% 0;
+}
+
+#camelbak,
+#bolso-camelbak,
+#tactico,
+#bolso-tactico,
+#sling,
+#bolso-sling,
+#estuche,
+#bolso-estuche {
+  display: grid;
+}
+
+#camelbak img,
+#tactico img,
+#sling img,
+#estuche img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  grid-area: 1/1/2/2;
+  align-self: center;
+  justify-self: center;
+}
+
+#tactico img,
+#estuche img {
+  grid-area: 1/2/2/3;
+}
+
+#bolso-camelbak,
+#bolso-tactico,
+#bolso-sling,
+#bolso-estuche {
+  width: 100%;
+  height: auto;
+  grid-area: 1/2/2/3;
+  align-self: center;
+  justify-self: center;
+  text-align: end;
+  padding: 0 10% 0;
+}
+
+#bolso-tactico,
+#bolso-estuche {
+  grid-area: 1/1/2/2;
+  text-align: start;
+}
+
+h3 {
+  font-size: 3.5rem;
+  line-height: 4rem;
+  font-weight: 400;
+}
+
+#form h3 {
+  text-align: center;
+  line-height: 2rem;
+  padding: 1rem 18% 0;
+  font-size: 1.5rem;
+  grid-area: 2/1/3/3;
+}
+
+#bolso-camelbak p,
+#bolso-tactico p,
+#bolso-sling p,
+#bolso-estuche p {
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  padding: 0;
+}
+
+#bolso-tactico p,
+#bolso-estuche p {
+  padding: 0 10% 0 0;
+}
+
+#bolso-camelbak b,
+#bolso-tactico b,
+#bolso-sling b,
+#bolso-estuche b {
+  font-weight: 400;
+}
+
+#catalog {
+  grid-area: 3/1/4/3;
+  display: flex;
+  flex-direction: row;
+}
+
+#email {
+  width: 300px;
+  height: 2.5rem;
+}
+
+#submit {
+  width: 80px;
+  color: rgb(101, 101, 101);
+}
+
+#form {
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 1200px) {
+  #reseña {
+    width: 40%;
+    padding: 25% 0 0% 5%;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  #reseña p {
+    line-height: 2rem;
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 2.3rem;
+    line-height: 3rem;
+  }
+
+  #form h3 {
+    line-height: 2rem;
+    padding: 0 18% 0;
+    font-size: 1.3rem;
+  }
+
+  h2 {
+    font-size: 3.5rem;
+    padding: 0 1.5rem 0;
+    margin-top: 1rem;
+  }
+
+  #bolso-camelbak p,
+  #bolso-tactico p,
+  #bolso-sling p,
+  #bolso-estuche p {
+    line-height: 2rem;
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 992px) {
+  #reseña {
+    width: 40%;
+    padding: 25% 0 0% 5%;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  #reseña p {
+    line-height: 2rem;
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  #form h3 {
+    line-height: 2rem;
+    padding: 0 18% 0;
+    font-size: 1.3rem;
+  }
+
+  #bolso-camelbak p,
+  #bolso-tactico p,
+  #bolso-sling p,
+  #bolso-estuche p {
+    line-height: 2rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #reseña {
+    width: 40%;
+    padding: 33% 0 0% 5%;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+
+  #reseña p {
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  #sport,
+  #tactical,
+  #daily,
+  #instrument,
+  #form {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    grid-template-rows: 10% auto;
+    grid-gap: 1rem;
+    background-size: contain;
+    height: auto;
+  }
+
+  h2 {
+    font-size: 3rem;
+    padding: 0 1.5rem 0;
+    margin-top: 0;
+  }
+
+  #content {
+    grid-template-columns: 100%;
+    grid-template-rows: 24% auto;
+    padding: 0 5% 6%;
+    grid-gap: 1rem;
+    align-items: center;
+    background-size: contain;
+  }
+
+  #camelbak,
+  #tactico,
+  #sling,
+  #estuche {
+    background-size: contain;
+  }
+
+  #camelbak img,
+  #tactico img,
+  #sling img,
+  #estuche img {
+    grid-area: 2/1/3/2;
+  }
+
+  #bolso-camelbak,
+  #bolso-tactico,
+  #bolso-sling,
+  #bolso-estuche {
+    grid-area: 1/1/2/2;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    padding: 0 10% 0;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    padding-bottom: 0.5rem;
+  }
+
+  #form h3 {
+    line-height: 2rem;
+    padding: 2% 15% 0;
+    font-size: 1.1rem;
+  }
+
+  #bolso-camelbak p,
+  #bolso-tactico p,
+  #bolso-sling p,
+  #bolso-estuche p {
+    line-height: 2rem;
+    font-size: 1.1rem;
+    padding: 0;
+  }
+
+  #header {
+    flex-wrap: wrap;
+    padding: 0.5rem;
+    width: 100%;
+  }
+
+  #logo {
+    display: flex;
+    margin-top: 15px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  #logo img {
+    margin: 0;
+  }
+
+  #nav-bar {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 50px;
+  }
+
+  #nav-bar > ul {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+  }
+
+  #nav-bar li {
+    padding-bottom: 0px;
+    font-size: 1.3rem;
+  }
+
+  #video {
+    margin-top: 120px;
+  }
+}
+
+@media (max-width: 576px) {
+  #nav-bar li {
+    font-size: 1.3rem;
+  }
+
+  #reseña {
+    width: 40%;
+    padding: 33% 0 0% 5%;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  #reseña p {
+    line-height: 1.5rem;
+    font-size: 1rem;
+  }
+
+  #sport,
+  #tactical,
+  #daily,
+  #instrument,
+  #form {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    grid-template-rows: 10% auto;
+    grid-gap: 0;
+  }
+
+  h2 {
+    font-size: 2rem;
+    padding: 0 1.5rem 0;
+    margin-top: 0;
+  }
+
+  #content {
+    grid-template-columns: 100%;
+    grid-template-rows: 22% auto;
+    padding: 0 5% 3rem;
+    grid-gap: 0rem;
+  }
+
+  #bolso-camelbak,
+  #bolso-tactico,
+  #bolso-sling,
+  #bolso-estuche {
+    grid-area: 1/1/2/2;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    padding: 0 5% 0;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    padding-bottom: 0rem;
+  }
+
+  #form h3 {
+    line-height: 1.5rem;
+    padding: 5% 10% 2%;
+    font-size: 0.9rem;
+  }
+
+  #bolso-camelbak p,
+  #bolso-tactico p,
+  #bolso-sling p,
+  #bolso-estuche p {
+    line-height: 2rem;
+    font-size: 0.9rem;
+    padding: 0;
+  }
+
+  #form h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 480px) {
+  #reseña {
+    width: 40%;
+    padding: 35% 0 0% 5%;
+    background: radial-gradient(
+      closest-side,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0)
+    );
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+  }
+
+  #reseña p {
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  #sport,
+  #tactical,
+  #daily,
+  #instrument,
+  #form {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    grid-template-rows: 10% auto;
+    grid-gap: 0;
+  }
+
+  h2 {
+    font-size: 2rem;
+    padding: 0 1.5rem 0;
+    margin-top: 0;
+  }
+
+  #content {
+    grid-template-columns: 100%;
+    grid-template-rows: 22% auto;
+    padding: 0 5% 3.5rem;
+    grid-gap: 0rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  #form h3 {
+    line-height: 1.5rem;
+    padding: 5% 10% 2%;
+    font-size: 0.8rem;
+  }
+
+  #bolso-camelbak p,
+  #bolso-tactico p,
+  #bolso-sling p,
+  #bolso-estuche p {
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+    padding: 0 5% 0;
+  }
+
+  #form h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+
+  #email {
+    width: 250px;
+    height: 2rem;
+  }
+
+  #submit {
+    width: 60px;
+    color: rgb(101, 101, 101);
+  }
+
+  #form {
+    margin-bottom: 3rem;
+  }
+}

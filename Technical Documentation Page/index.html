@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app.css" />
+    <title>Bootstrap Documentation</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Start Header -->
+      <nav id="navbar">
+        <header id="header">
+          <a href="#Bootstrap" id="logo-link" class="links nav-link">
+            <span id="logo"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="35"
+                height="35"
+                fill="currentColor"
+                class="bi bi-bootstrap"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M5.062 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762V8.162h1.822c1.236 0 1.887.463 1.887 1.348 0 .896-.627 1.377-1.811 1.377H6.375z"
+                />
+                <path
+                  d="M0 4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4zm4-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3H4z"
+                /></svg
+            ></span>
+            <h1>Bootstrap</h1>
+          </a>
+        </header>
+        <ul id="navlinks">
+          <li>
+            <a href="#Inicio_rápido" class="nav-link links">Inicio rápido</a>
+          </li>
+          <li>
+            <a href="#Plantilla_de_inicio" class="nav-link links"
+              >Plantilla de inicio</a
+            >
+          </li>
+          <li>
+            <a href="#Globales_importantes" class="nav-link links"
+              >Globales importantes</a
+            >
+          </li>
+          <li>
+            <a href="#Comunidad" class="nav-link links">Comunidad</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Start Main -->
+      <main id="main-doc">
+        <!-- Primera sección -->
+        <section class="main-section" id="Bootstrap">
+          <header class="section-title">
+            <h2>Bootstrap</h2>
+          </header>
+          <article>
+            <p>
+              <b>Bootstrap</b> es una biblioteca multiplataforma o conjunto de
+              herramientas de código abierto para diseño de sitios y
+              aplicaciones web. Contiene plantillas de diseño con tipografía,
+              formularios, botones, cuadros, menús de navegación y otros
+              elementos de diseño basado en HTML y CSS, así como extensiones de
+              JavaScript adicionales. A diferencia de muchos frameworks web,
+              solo se ocupa del desarrollo front-end.
+            </p>
+            <p>
+              <b>Bootstrap</b>, se ha consolidado como el marco de trabajo más
+              popular del mundo para crear sitios adaptables para dispositivos
+              móviles, con jsDelivr y una página de inicio de plantilla.
+            </p>
+          </article>
+        </section>
+        <!-- Segunda sección -->
+        <section class="main-section" id="Inicio_rápido">
+          <header class="section-title">
+            <h2>Inicio rápido</h2>
+          </header>
+          <article>
+            <p>
+              ¿Está buscando agregar rápidamente Bootstrap a su proyecto? Use
+              jsDelivr, proporcionado de forma gratuita por la gente de
+              jsDelivr. ¿Utiliza un administrador de paquetes o necesita
+              descargar los archivos fuente?
+            </p>
+            <h3>CSS</h3>
+            <p>
+              Copie y pegue la hoja de estilo <code>&lt;link&gt;</code> en su
+              <code>&lt;head&gt;</code> todas las demás hojas de estilo para
+              cargar nuestro CSS.
+            </p>
+            <pre
+              class="pre-largo"
+            ><code class="code-largo">&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"&gt;</code></pre>
+            <h3>JS</h3>
+            <p>
+              Muchos de nuestros componentes requieren el uso de JavaScript para
+              funcionar. Específicamente, requieren jQuery , Popper.js y
+              nuestros propios complementos de JavaScript. Coloque las
+              siguientes <code>&lt;script&gt;</code>s cerca del final de sus
+              páginas, justo antes de la etiqueta de cierre
+              <code>&lt;/body&gt;</code>, para habilitarlas. jQuery debe venir
+              primero, luego Popper.js y luego nuestros complementos de
+              JavaScript.
+            </p>
+            <p>
+              Usamos la versión delgada de jQuery , pero también se admite la
+              versión completa.
+            </p>
+            <pre
+              class="pre-largo"
+            ><code class="code-largo">&lt;script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"&gt;&lt;/script&gt;
+&lt;script&gt; src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"&gt;&lt;/script&gt;</code></pre>
+            <p>
+              ¿Tiene curiosidad por saber qué componentes requieren
+              explícitamente jQuery, nuestro JS y Popper.js? Haga clic en el
+              enlace Mostrar componentes a continuación. Si no está seguro
+              acerca de la estructura general de la página, siga leyendo para
+              ver una plantilla de página de ejemplo.
+            </p>
+            <p>
+              Nuestro bootstrap.bundle.jse bootstrap.bundle.min.jsincluye Popper
+              , pero no jQuery . Para obtener más información sobre lo que se
+              incluye en Bootstrap, consulte nuestra sección de contenidos .
+            </p>
+          </article>
+        </section>
+        <!-- Tercera sección -->
+        <section class="main-section" id="Plantilla_de_inicio">
+          <header class="section-title">
+            <h2>Plantilla de inicio</h2>
+          </header>
+          <article>
+            <p>
+              Asegúrese de configurar sus páginas con los últimos estándares de
+              diseño y desarrollo. Eso significa usar un tipo de documento HTML5
+              e incluir una metaetiqueta de ventana gráfica para comportamientos
+              de respuesta adecuados. Póngalo todo junto y sus páginas deberían
+              verse así:
+            </p>
+            <pre
+              class="pre-largo"
+            ><code class="code-largo">&lt;!doctype html&gt;
+              &lt;html lang="en"&gt;
+                &lt;head&gt;
+                  &lt;!-- Required meta tags --&gt;
+                  &lt;meta charset="utf-8"&gt;
+                  &lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;
+              
+                  &lt;!-- Bootstrap CSS --&gt;
+                  &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"&gt;
+              
+                  &lt;title&gt;Hello, world!&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                  &lt;h1&gt;Hello, world!&lt;/h1&gt;
+              
+                  &lt;!-- Optional JavaScript --&gt;
+                  &lt;!-- jQuery first, then Popper.js, then Bootstrap JS --&gt;
+                  &lt;script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"&gt;&lt;/script&gt;
+                  &lt;script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"&gt;&lt;/script&gt;
+                  &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"&gt;&lt;/script&gt;
+                &lt;/body&gt;
+              &lt;/html&gt;</code></pre>
+            <p>
+              Eso es todo lo que necesita para los requisitos generales de la
+              página. Visite los documentos de diseño o nuestros ejemplos
+              oficiales para comenzar a diseñar el contenido y los componentes
+              de su sitio.
+            </p>
+          </article>
+        </section>
+        <!-- Cuarta sección -->
+        <section class="main-section" id="Globales_importantes">
+          <header class="section-title">
+            <h2>Globales importantes</h2>
+          </header>
+          <article>
+            <p>
+              Bootstrap emplea un puñado de estilos y configuraciones globales
+              importantes que deberá tener en cuenta al usarlo, todos los cuales
+              están orientados casi exclusivamente a la normalización de estilos
+              de navegadores cruzados. Sumerjámonos.
+            </p>
+            <h3>Tipo de documento HTML5</h3>
+            <p>
+              Bootstrap requiere el uso del tipo de documento HTML5. Sin él,
+              verá un estilo funky incompleto, pero incluirlo no debería causar
+              contratiempos considerables.
+            </p>
+            <pre
+              class="pre-largo"
+            ><code class="code-largo">&lt;!doctype html&gt;
+              &lt;html lang="en"&gt;
+                ...
+              &lt;/html&gt;</code></pre>
+            <h3>Metaetiqueta responsiva</h3>
+            <p>
+              Bootstrap se desarrolla primero para dispositivos móviles , una
+              estrategia en la que primero optimizamos el código para
+              dispositivos móviles y luego escalamos los componentes según sea
+              necesario utilizando consultas de medios CSS. Para garantizar una
+              representación adecuada y el zoom táctil para todos los
+              dispositivos, agregue la metaetiqueta de ventana gráfica sensible
+              a su archivo <code>&lt;head&gt;</code>.
+            </p>
+            <pre
+              class="pre-largo"
+            ><code class="code-largo">&lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;</code></pre>
+            <p>
+              Puede ver un ejemplo de esto en acción en la plantilla de inicio .
+            </p>
+            <h3>Tamaño de caja</h3>
+            <p>
+              Para un dimensionamiento más sencillo en CSS, cambiamos el
+              box-sizingvalor global de content-boxa border-box. Esto garantiza
+              paddingque no afecte el ancho calculado final de un elemento, pero
+              puede causar problemas con algún software de terceros como Google
+              Maps y Google Custom Search Engine.
+            </p>
+            <p>
+              En las raras ocasiones en que necesite anularlo, use algo como lo
+              siguiente:
+            </p>
+            <pre
+              class="pre-largo"
+            ><code class="code-largo">.selector-for-some-widget &lbrace;box-sizing: content-box; &rbrace;</code></pre>
+            <p>
+              Con el fragmento anterior, los elementos anidados, incluido el
+              contenido generado a través de ::beforey , ::afterheredarán todos
+              los especificados box-sizingpara ese archivo
+              .selector-for-some-widget.
+            </p>
+            <p>
+              Obtenga más información sobre el modelo de caja y el tamaño en CSS
+              Tricks .
+            </p>
+            <h3>Reiniciar</h3>
+            <p>
+              Para mejorar la representación entre navegadores, usamos Reiniciar
+              para corregir las inconsistencias entre los navegadores y
+              dispositivos mientras proporcionamos restablecimientos ligeramente
+              más obstinados a los elementos HTML comunes.
+            </p>
+          </article>
+        </section>
+        <!-- Quinta sección  -->
+        <section class="main-section" id="Comunidad">
+          <header class="section-title">
+            <h2>Comunidad</h2>
+          </header>
+          <article>
+            <p>
+              Manténgase actualizado sobre el desarrollo de Bootstrap y
+              comuníquese con la comunidad con estos útiles recursos.
+            </p>
+            <ul>
+              <li>Siga a @getbootstrap en Twitter.</li>
+              <li>Lea y suscríbase al blog oficial de Bootstrap .</li>
+              <li>Únete a la sala oficial de Slack .</li>
+              <li>
+                Chatea con compañeros Bootstrappers en IRC. En el
+                irc.freenode.net servidor, en el ##bootstrap canal.
+              </li>
+              <li>
+                La ayuda de implementación se puede encontrar en Stack Overflow
+              </li>
+              <li>
+                Los desarrolladores deben usar la palabra clave bootstrapen los
+                paquetes que modifican o agregan a la funcionalidad de Bootstrap
+                cuando se distribuyen a través de npm o mecanismos de entrega
+                similares para una máxima visibilidad.
+              </li>
+            </ul>
+            <p>
+              También puede seguir a @getbootstrap en Twitter para conocer los
+              últimos chismes y videos musicales increíbles.
+            </p>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

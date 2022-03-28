@@ -1,0 +1,41 @@
+html {
+  /* Setting a base font size of 10px give us easier rem calculations
+     Info: 1rem === 10px, 1.5rem === 15px, 2rem === 20px and so forth
+   */
+  font-size: 10px;
+}
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-align: center;
+  color: #333;
+  margin: 0;
+}
+header {
+  width: 100%;
+  height: auto;
+  background: blue;
+  color: white;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+#reseña {
+  font-size: 1.7em;
+}
+#img-div {
+  margin: auto;
+  width: 50%;
+  height: auto;
+}
+#image {
+  max-width: 100%;
+  height: auto;
+}
+#img-caption {
+  margin: 0;
+  font-size: 1.5em;
+}
